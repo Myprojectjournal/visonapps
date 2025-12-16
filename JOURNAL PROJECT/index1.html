@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Shadow Course</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 30px;
+    }
+    h2 {
+      margin-top: 50px;
+      color: #333;
+    }
+    .box {
+      width: 200px;
+      height: 100px;
+      background: white;
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    /* Level 1 */
+    .level1 { box-shadow: 10px 10px 15px gray; }
+
+    /* Level 2 */
+    .level2a { box-shadow: 20px 20px black; }          /* sharp */
+    .level2b { box-shadow: 20px 20px 30px black; }     /* blurred */
+
+    /* Level 3 */
+    .level3 { box-shadow: 0 0 10px 20px rgba(0,0,0,0.5); }
+
+    /* Level 4 */
+    .level4 { box-shadow: inset 5px 5px 10px gray; }
+
+    /* Level 5 */
+    .level5 { box-shadow: 5px 5px 10px red, -5px -5px 10px blue; }
+
+    /* Level 6 */
+    .level6 { box-shadow: 0 0 20px 5px lime; }
+
+    /* Level 7 */
+    .level7 { box-shadow: 5px 10px 20px rgba(0,0,0,0.3); }
+
+    /* Level 8 */
+    .level8 { 
+      box-shadow: 
+        10px 10px 20px rgba(0,0,0,0.4),   /* outer shadow */
+        inset 5px 5px 10px rgba(0,0,0,0.3), /* inner shadow */
+        0 0 30px 10px rgba(255,0,0,0.5);   /* glowing red */
+    }
+  </style>
+</head>
+<body>
+  <h1>🌑 Box-Shadow Playground</h1>
+
+  <h2>Level 1: Basic Shadow</h2>
+  <div class="box level1">Shadow</div>
+
+  <h2>Level 2: Sharp vs Blur</h2>
+  <div class="box level2a">Sharp</div>
+  <div class="box level2b">Blurred</div>
+
+  <h2>Level 3: Spread Radius</h2>
+  <div class="box level3">Spread</div>
+
+  <h2>Level 4: Inner Shadow</h2>
+  <div class="box level4">Inset</div>
+
+  <h2>Level 5: Multiple Shadows</h2>
+  <div class="box level5">Multi</div>
+
+  <h2>Level 6: Glowing Shadow</h2>
+  <div class="box level6">Glow</div>
+
+  <h2>Level 7: Realistic Shadow</h2>
+  <div class="box level7">Natural</div>
+
+  <h2>Level 8: Masterpiece (All Combined)</h2>
+  <div class="box level8">3D Glow</div>
+
+</body>
+</html>

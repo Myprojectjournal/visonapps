@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Entries</title>
+<style>
+:root{
+  --primary: #033d4b;
+  --secondary: #045b66;
+  --nav-bg: rgba(3, 61, 75, 0.95);
+  --nav-hover: #046a88;
+  --text-light: #e0f2f1;
+  --text-dark: #07203a;
+  --card-bg: rgba(255,255,255,0.95);
+  --shadow: rgba(0,0,0,0.15);
+  --radius:18px;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: linear-gradient(135deg, #79f38f, #4098df);
+  color: var(--text-dark);
+}
+
+/* Nav Bar */
+nav.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 24px 50px;
+  background: var(--nav-bg);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 30px var(--shadow);
+  position: sticky;
+  top: 16px;
+  margin: 0 20px 30px 20px;
+  align-items: center;
+  z-index: 100;
+}
+
+nav.top-nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 20px;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav.top-nav a:hover {
+  background: var(--nav-hover);
+  transform: translateY(-3px);
+}
+
+nav.top-nav a.active {
+  background: var(--text-light);
+  color: var(--nav-bg);
+}
+
+/* Hero Section with straight division line */
+.hero {
+  background: linear-gradient(145deg, rgba(3,61,75,0.15), rgba(4,91,30,0.12));
+  padding: 40px 30px;
+  margin: 0 20px;
+  border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0,0,0,0.15);
+}
+
+.hero h1 {
+  margin:0;
+  font-size:2.2rem;
+  color: var(--primary);
+}
+
+.hero p {
+  margin:5px 0 0 0;
+  font-size:1.1rem;
+  color: #000609;
+}
+
+/* Cards Section */
+.resources { max-width:1200px; margin:40px auto; padding:0 16px; }
+
+.resource-cards {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap:32px;
+  margin-top: 30px;
+}
+
+.resource-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding:28px;
+  box-shadow: 0 12px 28px var(--shadow);
+  text-decoration:none;
+  color:inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(12,30,45,0.05);
+  position: relative;
+}
+
+.resource-card::before {
+  content: attr(data-date);
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--secondary);
+  color: var(--text-light);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.resource-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px var(--shadow);
+}
+
+.resource-card h3 {
+  margin:0 0 12px 0;
+  font-size:1.4rem;
+  color: var(--secondary);
+}
+
+.resource-card p {
+  margin:0;
+  font-size:1rem;
+  line-height:1.6;
+  color: var(--text-dark);
+}
+
+/* Footer */
+footer {
+  text-align:center;
+  color:var(--text-dark);
+  margin:40px 0 20px 0;
+  font-size:0.9rem;
+}
+
+/* Responsive */
+@media(max-width:1024px){
+  .resource-cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width:768px){
+  .resource-cards { grid-template-columns: 1fr; }
+}
+@media(max-width:600px){
+  nav.top-nav { flex-direction: column; gap:16px; padding:20px; }
+  .hero { flex-direction: column; gap:16px; text-align:center; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="top-nav">
+    <a href="../index.html">Home</a>
+    <a href="../daily/index.html" class="active">Daily Entries</a>
+    <a href="../weekly/index.html">Weekly Observations</a>
+    <a href="../resources/index.html">Resources</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <h1>📝 Daily Entries</h1>
+      <p>Observations of Demonic Voices, wins, and lessons learned each day.</p>
+    </div>
+    <div style="color:var(--text-dark); font-weight:600;"></div>
+  </section>
+
+  <section class="resources">
+    <div class="resource-cards">
+      <a class="resource-card" href="./Dates/2025-09-12.html" data-date="Sep 12">
+        <h3>Fri Sep 12 2025</h3>
+        <p>Observations, wins, lessons, and reflections for this day.</p>
+      </a>
+
+      <a class="resource-card" href="./Dates/2025-09-13.html" data-date="Sep 13">
+        <h3>Sun Sep 13 2025</h3>
+        <p>Observations, wins, lessons, and reflections for this day.</p>
+      </a>
+
+      <a class="resource-card" href="./Dates/2025-09-14.html" data-date="Sep 14">
+        <h3>Mon Sep 14 2025</h3>
+        <p>Observations, wins, lessons, and reflections for this day.</p>
+      </a>
+
+      <a class="resource-card" href="./Dates/2025-09-15.html" data-date="Sep 15">
+        <h3>Tue Sep 15 2025</h3>
+        <p>Observations, wins, lessons, and reflections for this day.</p>
+      </a>
+
+      <a class="resource-card" href="./Dates/2025-09-16.html" data-date="Sep 16">
+        <h3>Wed Sep 16 2025</h3>
+        <p>Observations, wins, lessons, and reflections for this day.</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>© Your Ministry</footer>
+
+</body>
+</html>

@@ -1,0 +1,718 @@
+body {
+  font-family: Arial, sans-serif;
+   background:url(../NOTEBOOK/images/paper-fibers.png);
+    background-attachment: fixed;
+  ;
+  
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: linear-gradient(145deg, #08b542, #03197a);
+  padding: 15px;
+  flex-wrap: wrap;
+  border-radius: 6px;
+}
+
+.nav-btn {
+  background-color: white;
+  color: rgb(2, 72, 2);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:hover {
+  background-color: #45a049;
+  color: white;
+}
+.about-icon {
+  zoom: 10%;
+  font-size: 6rem;            /* size of the icon */
+  color: #4facfe;             /* icon color */
+  background: rgba(255,255,255,0.1); /* slight background for style */
+  padding: 3rem;              /* space around icon */
+  border-radius: 50%;         /* circular shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+/* jorunal Section Styling */
+.journal-hero {
+  background: #070264;
+  /* deep navy background */
+  color: #fff;
+  /* tall hero section */
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 5px;
+
+
+}
+
+.journal-content h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+
+.journalh1 {
+  color: rgb(250, 246, 246);
+  font-weight: bolder;
+
+}
+
+.journal-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: whitesmoke
+    /* soft light blue for subtitle */
+}
+
+/* Button inside hero */
+.journal-button {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffeb3b;
+  /* bright accent color */
+  color: #1a237e;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.journal-button:hover {
+  transform: translateY(-3px);
+  background-color: #fdd835;
+}
+
+
+
+
+
+
+
+/* Sections */
+
+
+
+
+section p {
+  line-height: 1.6;
+  color: #555;
+}
+
+section,
+.journal,
+h2,
+ul,
+li {
+  color: #555;
+}
+
+/* Section Base */
+.about,
+.goals,
+.explore {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.about h2,
+.goals h2,
+.explore h2 {
+  font-size: 2rem;
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+  border-left: 6px solid #3498db;
+  padding-left: 12px;
+}
+
+/* Section Content */
+.section-content {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+
+/* ===== Section Container ===== */
+.what-youll-find {
+  background: linear-gradient(135deg, #c6dbff, #dbe9fc);
+  /* stylish gradient */
+  padding: 5rem 2rem;
+  border-radius: 30px 0 30px 0;
+  /* offset corners */
+  max-width: 1100px;
+  margin: 3rem auto;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+ 
+/* ===== Section Heading ===== */
+.what-youll-find h2 {
+  font-size: 2.8rem;
+  color: #1a237e;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== Section Description ===== */
+.section-description {
+  text-align: center;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #1a237e;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  display: inline-block;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.section-description::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60%;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== Cards Container ===== */
+.explore-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ===== Individual Cards ===== */
+.about-style{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  width: 220px;
+  border-radius: 25px;
+  color: rgb(251, 252, 252);
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  gap: 15px;
+  font-size: 10px;
+}
+
+/* ===== Individual Cards ===== */
+.explore-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  width: 220px;
+  border-radius: 25px;
+  color: rgb(251, 252, 252);
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  gap: 15px;
+}
+
+/* ===== Card Gradients About me ===== */
+
+.about-style.card {
+  background: linear-gradient(145deg, #680404, #046519);}
+
+.explore-card.daily {
+  background: linear-gradient(145deg, #025811, #3404a3);
+}
+
+.explore-card.weekly {
+  background: linear-gradient(145deg, #0af257, #02241d);
+}
+
+.explore-card.resources {
+  background: linear-gradient(145deg, #220bd0, #323b42);
+}
+
+/* ===== Icon Styling ===== */
+.explore-card i {
+  font-size: 2.2rem;
+}
+
+/* ===== Hover Effect ===== */
+.explore-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.about-style:hover{  
+  transform: translatey(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Contact Section */
+/* Contact Section Full-Width Background */
+
+.contact-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #eef6fc;
+  /* soft light blue */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.contact-section .contact-form {
+  max-width: 1000%;
+  /* keeps form centered and readable */
+  width: 100%;
+  background: #eef6fc;
+  /* keeps the form on light card for contrast */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-section h2 {
+  color: #1a237e;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  color: #34495e;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1a237e;
+  box-shadow: 0 0 8px rgba(26, 35, 126, 0.2);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffeb3b;
+  /* bright accent yellow */
+  color: #1a237e;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #fdd835;
+  transform: translateY(-3px);
+}
+
+footer {
+  background: #1a237e;
+  /* deep navy */
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #bbdefb;
+  /* soft blue */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.daily {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  /* removes underline */
+  /* keeps the text color */
+  /* makes entire card clickable */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f7f4;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #3014e8;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+
+.header-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: default;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Weekly container */
+.weekly-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Page title */
+.weekly-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+}
+
+/* Weekly cards grid */
+.weekly-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual weekly card */
+.weekly-card {
+  background: #eef6fc;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  /* removes underline if card is a link */
+  transition: transform 0.2s, background 0.3s;
+  display: block;
+  /* makes entire card clickable */
+}
+
+/* Hover effect */
+.weekly-card:hover {
+  transform: translateY(-5px);
+  background: #d9ebfa;
+}
+
+/* Weekly card heading */
+.weekly-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1a237e;
+}
+
+/* Weekly card content */
+.weekly-card p {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.5;
+}
+
+.header nav {
+  background: #1a237e;
+  /* deep navy */
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 8px;
+  /* optional, rounded nav bar */
+  margin-bottom: 2rem;
+}
+
+/* Links inside Nav */
+header nav a {
+  color: #bbdefb;
+  /* soft blue */
+  margin: 0 15px;
+  text-decoration: none;
+  /* remove underline */
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect for nav links */
+header nav a:hover {
+  background: #3498db;
+  /* bright blue on hover */
+  color: white;
+}
+
+/* Active page link (optional) */
+header nav a.active {
+  background: #283593;
+  /* darker navy */
+  color: white;
+}
+
+/* Top Navigation Bar */
+header nav {
+  background: #1a237e;
+  /* deep navy */
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 8px;
+  /* optional, rounded nav bar */
+  margin-bottom: 2rem;
+}
+
+/* Links inside Nav */
+header nav a {
+  color: #bbdefb;
+  /* soft blue */
+  margin: 0 15px;
+  text-decoration: none;
+  /* remove underline */
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect for nav links */
+header nav a:hover {
+  background: #3498db;
+  /* bright blue on hover */
+  color: white;
+}
+
+/* Active page link (optional) */
+header nav a.active {
+  background: #283593;
+  /* darker navy */
+  color: white;
+}
+
+/* Resources container */
+.resources-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Page Title */
+.resources-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid for resource cards */
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual resource card */
+.resource-card {
+  background: #eef6fc;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  /* removes underline */
+  transition: transform 0.2s, background 0.3s;
+  display: block;
+  /* makes whole card clickable */
+}
+
+/* Hover effect */
+.resource-card:hover {
+  transform: translateY(-5px);
+  background: #d9ebfa;
+}
+
+/* Card heading */
+.resource-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1a237e;
+}
+
+/* Card description */
+.resource-card p {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.5;
+}
+
+/* My Goals Card Section */
+.my-goals-cards {
+  max-width: 2000px;
+  margin: 3rem auto;
+  padding: 3rem 1rem;
+  padding-bottom: 50PX;
+
+}
+
+.my-goals-cards h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a237e;
+  margin-bottom: 2rem;
+}
+
+/* Goal cards grid */
+.goal-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual goal card */
+.goal-card {
+  background: #eef6fc;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.goal-card h3 {
+  font-size: 1.3rem;
+  color: #1a237e;
+  margin: 10px 0;
+}
+
+.goal-card p {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.5;
+}
+
+/* Goal icon */
+.goal-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* Hover effect */
+.goal-card:hover {
+  transform: translateY(-5px);
+  background: #d9ebfa;
+}

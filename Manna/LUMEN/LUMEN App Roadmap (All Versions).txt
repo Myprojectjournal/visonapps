@@ -1,0 +1,118 @@
+LUMEN App Roadmap (All Versions)
+
+🌱 Version 1 — “The Seed”
+
+Goal: Detect scams from copied/pasted messages.
+Core Features:
+
+1. Text box for users to paste chats
+
+
+2. Scan button (detect keywords, patterns)
+
+
+3. Result card: “Safe / Suspicious / Danger”
+
+
+4. Simple history log (localStorage)
+
+
+5. Clean, calm UI (LUMEN colors: soft gold & white)
+
+
+
+Tools: HTML + CSS + JavaScript, GitHub Pages / Netlify, Firebase (free tier)
+Cost: ₦0 – ₦5,000/year
+Time: 2–3 weeks
+
+
+---
+
+🌿 Version 2 — “The Garden”
+
+Goal: Add built-in chat for safe conversations.
+Core Features:
+
+1. User accounts (email/Google login)
+
+
+2. Simple chat rooms
+
+
+3. LUMEN scan runs on each message
+
+
+4. Report button to flag scams
+
+
+5. Dashboard showing risk level and advice
+
+
+
+Tools: Firebase Authentication + Firestore, basic security rules
+Cost: ₦5,000 – ₦10,000/month (~₦60k–₦120k/year)
+Time: 1–2 months
+
+
+---
+
+🌟 Version 3 — “LUMEN with Ears and Eyes”
+
+Goal: Add voice, reporting, and insights.
+Core Features:
+
+1. Voice assistant & audio reading
+
+
+2. Community report system (upload suspicious messages safely)
+
+
+3. Notification system for alerts
+
+
+4. Insight dashboard: scans done, risk scores, flagged messages
+
+
+
+Tools: Web Speech API, Firebase, Chart.js
+Cost: ₦10,000 – ₦20,000/month (~₦120k–₦240k/year)
+Time: 2–3 months
+
+
+---
+
+💰 Funding & Budget Notes
+
+Version 1: Can start immediately on personal laptop, minimal cost
+
+Version 2: Ideal after getting a steady salary
+
+Version 3+: Consider grants, partners, or extra funding
+
+Domain names: ₦6k–₦10k/year
+
+Optional branding/design: one-time ₦10k
+
+
+
+---
+
+🛡 Safe Building Rules
+
+1. Use your own laptop
+
+
+2. Work on the app outside work hours
+
+
+3. Don’t use company resources or copy company ideas
+
+
+4. Keep personal files separate from work files
+
+
+
+
+---
+
+✅ Now LUMEN is officially on the roadmap!

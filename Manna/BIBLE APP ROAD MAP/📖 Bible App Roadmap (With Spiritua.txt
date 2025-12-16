@@ -1,0 +1,45 @@
+📖 Bible App Roadmap (With Spiritual Shield Mode
+Level 1: Mini Version – Portfolio Ready
+Bible Section:
+Static Bible verses
+Verse of the Day
+Selman Section:
+Few video links / message summaries
+Mentor Bots:
+Bot 1 explains Bible verses in child-like style
+Bot 2 explains Selman messages in child-like style
+Daily Devotion Section:
+Daily prayer + gospel + reflection
+Outcome: Clean front-end demo that shows your coding and spiritual app concept.
+---
+Level 2: Add Spiritual Shield Mode (Intermediate Features)
+Quick Scripture Replies:
+User types or presses trigger → bot responds with scripture & encouragement.
+Audio Guidance:
+Preloaded prayers or Bible reading for headphones to help block negative influence.
+Auto-Journal:
+Users record struggles or attacks → app organizes into private logs.
+Emergency Button:
+Instant playback of strong prayer or scripture when needed.
+Daily Encouragement Notifications:
+Push notifications with verses or guidance.
+Outcome: App becomes a digital mentor & spiritual support companion.
+---
+Level 3: Full Vision – Advanced / AI Integration
+Bible API Integration: Full searchable Bible content.
+AI Mentor Bots:
+Explain verses/messages dynamically, child-like.
+Guide users in spiritual journey.
+Dynamic Selman Message Search:
+Search any message by topic (prayer, fasting, wisdom).
+Personalized Daily Devotion:
+Custom suggestions based on user’s spiritual growth & journaling.
+Advanced Shield Features:
+Optional voice recording for real-time guidance.
+Outcome: Full-featured spiritual companion app combining devotional, mentor, and support features.
+---
+💡 Notes
+Start with Level 1, then gradually add Shield features in Level 2.
+Keep all features inside one app; Shield Mode is just a tab/section.
+Mini version is safe for portfolio; full AI-powered Shield comes later.
+---
