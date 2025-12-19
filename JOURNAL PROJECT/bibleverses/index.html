@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Verses</title>
+  
+  <style>/* ===== Landing Page Container ===== */
+.landing-page {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* deep blue gradient */
+  color: #ffffff;
+  min-height: 100vh;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ===== Heading ===== */
+.landing-page h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* ===== Description ===== */
+.landing-description {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #dbe9fc;
+}
+
+/* ===== Cards Container ===== */
+.landing-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ===== Individual Verse Buttons ===== */
+.landing-card {
+  display: block;
+  padding: 25px 35px;
+  background: linear-gradient(145deg, #4facfe, #00f2fe); /* light blue gradient */
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Hover Effect */
+.landing-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  background: linear-gradient(145deg, #00f2fe, #4facfe);
+}</style>
+</head>
+<body>
+
+<section class="landing-page">
+  <h1 style="font-size: 200%;">Bible Verses</h1>
+  <p class="landing-description">
+    Click on any title below to read the full Bible verse or passage. These verses will guide and inspire your walk with Jesus.
+  </p>
+
+  <div class="landing-links">
+    <a class="landing-card" href="john-3-16.html">John 3:16</a>
+    <a class="landing-card" href="psalm-23.html">Psalm 23</a>
+    <a class="landing-card" href="proverbs-3-5.html">Proverbs 3:5-6</a>
+    <a class="landing-card" href="isaiah-41-10.html">Isaiah 41:10</a>
+    <a class="landing-card" href="romans-8-28.html">Romans 8:28</a>
+  </div>
+</section>
+
+</body>
+</html>

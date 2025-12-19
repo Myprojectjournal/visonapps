@@ -1,0 +1,119 @@
+/* Top Navigation Bar */
+.header nav {
+  background: #1a237e; /* deep navy */
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 8px; /* optional, rounded nav bar */
+  margin-bottom: 2rem;
+}
+
+/* Links inside Nav */
+header nav a {
+  color: #bbdefb; /* soft blue */
+  margin: 0 15px;
+  text-decoration: none; /* remove underline */
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect for nav links */
+header nav a:hover {
+  background: #3498db; /* bright blue on hover */
+  color: white;
+}
+
+/* Active page link (optional) */
+header nav a.active {
+  background: #283593; /* darker navy */
+  color: white;
+}
+
+/* Top Navigation Bar */
+header nav {
+  background: #1a237e; /* deep navy */
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 8px; /* optional, rounded nav bar */
+  margin-bottom: 2rem;
+}
+
+/* Links inside Nav */
+header nav a {
+  color: #bbdefb; /* soft blue */
+  margin: 0 15px;
+  text-decoration: none; /* remove underline */
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect for nav links */
+header nav a:hover {
+  background: #3498db; /* bright blue on hover */
+  color: white;
+}
+
+/* Active page link (optional) */
+header nav a.active {
+  background: #283593; /* darker navy */
+  color: white;
+}
+
+/* Resources container */
+.resources-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Page Title */
+.resources-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid for resource cards */
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual resource card */
+.resource-card {
+  background: #eef6fc;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-decoration: none; /* removes underline */
+  transition: transform 0.2s, background 0.3s;
+  display: block; /* makes whole card clickable */
+}
+
+/* Hover effect */
+.resource-card:hover {
+  transform: translateY(-5px);
+  background: #d9ebfa;
+}
+
+/* Card heading */
+.resource-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1a237e;
+}
+
+/* Card description */
+.resource-card p {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.5;
+}
