@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Commanding Success — Apostle Joshua Selman</title>
+
+  <!-- Styling -->
+  <style>
+    :root{
+      --bg:#f5f8fb;
+      --card:#ffffff;
+      --accent-1: #045b1e;
+      --accent-2: #03555a;
+      --blue:#2b7dbf;
+      --muted:#7b8794;
+      --glass: rgba(255,255,255,0.6);
+      --radius:14px;
+      --shadow: 0 8px 30px rgba(15,23,42,0.06);
+      --maxw:1100px;
+      --reading: 1.75;
+    }
+
+    /* Base */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,var(--bg), #fefefe);
+      color:#17202a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px 20px;
+      line-height:var(--reading);
+    }
+
+    .site {
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+
+    /* Header / Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      color: #fff;
+      padding: 3.2rem 2rem;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .hero h1{
+      margin:0 0 .25rem 0;
+      font-size: clamp(1.6rem, 3.8vw, 2.6rem);
+      letter-spacing: 1px;
+    }
+
+    .hero p.lead{
+      margin:0;
+      opacity:.95;
+      font-size: 1rem;
+    }
+
+    .hero .scripture {
+      text-align:right;
+      font-weight:600;
+      font-size: .95rem;
+      opacity:.95;
+    }
+
+    /* Content cards */
+    .message {
+      background: var(--card);
+      border-radius: var(--radius);
+      margin-top: 28px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(15,23,42,0.03);
+    }
+
+    .message + .message { margin-top: 20px; }
+
+    .message-title{
+      margin:0 0 10px 0;
+      font-size: 1.45rem;
+      color: #122233;
+      display:flex;
+      align-items:center;
+      gap:.5rem;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: .95rem;
+      margin-bottom: 14px;
+    }
+
+    /* Paragraphs and emphasis */
+    .message p{
+      margin: .6rem 0;
+      font-size: 1.02rem;
+      color: #1f2b34;
+      line-height: 1.72;
+    }
+
+    strong { color: #000; font-weight:700; }
+    em { font-style:italic; color: #444; }
+
+    /* Blockquote / verse */
+    blockquote {
+      margin: 14px 0;
+      padding: 14px 18px;
+      border-left: 6px solid var(--blue);
+      background: linear-gradient(90deg, rgba(43,125,191,0.04), rgba(43,125,191,0.02));
+      color: #234a6b;
+      font-style: italic;
+      border-radius: 8px;
+    }
+
+    .scripture-inline {
+      color: var(--blue);
+      font-weight:600;
+    }
+
+    /* Lists */
+    ol, ul { margin-left: 1.05rem; color: #24323a; }
+    ol li, ul li { margin: .45rem 0; }
+    ul.principles { padding-left: 1.1rem; }
+
+    /* Highlighted box */
+    .pill {
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(4,91,30,0.08);
+      color: var(--accent-1);
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    /* Small callout */
+    .callout {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: linear-gradient(90deg, rgba(4,91,30,0.03), rgba(3,85,90,0.02));
+      border-left: 4px solid var(--accent-1);
+      border-radius: 8px;
+      color: #16313a;
+    }
+
+    /* Footer / prayer area */
+    .prayers {
+      margin-top: 18px;
+      display:grid;
+      gap:10px;
+    }
+
+    .prayer-item {
+      background: linear-gradient(90deg, rgba(43,125,191,0.03), rgba(43,125,191,0.01));
+      border-left: 4px solid var(--blue);
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-weight:600;
+    }
+
+    /* Responsive */
+    @media (max-width:820px){
+      .hero { grid-template-columns: 1fr; text-align:left; gap:.6rem; }
+      .hero .scripture { text-align:left; margin-top: .2rem; }
+    }
+
+    @media (max-width:460px){
+      body { padding:18px 12px; }
+      .hero { padding: 2rem; border-radius:12px; }
+      .message { padding:18px; border-radius:12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header class="hero" role="banner">
+      <div>
+        <h1>COMMANDING SUCCESS</h1>
+        <p class="lead"></p>
+      </div>
+      <div class="scripture">Joshua 1:8 · John 10:10 · John 15:8,16</div>
+    </header>
+
+    <!-- Message card -->
+    <article class="message" aria-labelledby="m1">
+      <h2 id="m1" class="message-title"><span class="pill">1</span> Commanding Success</h2>
+      <p>There are many people who have everything men look for — <strong>except joy</strong>. Joy is not as cheap as you make it. Let's lift our hands for one minute and ask the Lord: <em>"Speak to me by Your Word, speak to me by Your Spirit."</em></p>
+
+      <p>There is a liberating power in God's Word. When the Word of God comes — when it is taught, believed, understood, and acted upon — it delivers with guarantee.</p>
+
+      <blockquote>Joshua 1:8 — "This book of the law shall not depart from thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous, and then thou shalt have good success."</blockquote>
+
+      <p>In God’s mind nobody should have a worse yesterday. God desires that we excel, be fruitful, and make progress. It is in His interest that believers do well and excel.</p>
+
+      <p class="callout"><strong>John 10:10</strong> — Jesus said the thief comes to steal, kill and destroy, but He came that we may have life and have it abundantly.</p>
+
+      <p>God is glorified when we succeed and bear fruit. <strong>John 15:8</strong> — "Herein is my Father glorified, that ye bear much fruit; so shall ye be my disciples." <strong>John 15:16</strong> — "Ye have not chosen me, but I have chosen you, and ordained you, that ye should go and bring forth fruit, and that your fruit should remain."</p>
+
+      <p>That whatsoever ye shall ask of the Father in my name, He may give it unto you. That means anything that fights your fruitfulness is fighting the will of God. There are many forces attempting to fight your fruitfulness, your advancement, and your progress. Any force fighting what God wills for you will come under arrest.</p>
+
+      <p>God is so desirous of fruitfulness that in <strong>Mark 11</strong> when Jesus saw a fig tree with leaves but no fruit He cursed it — showing how God values fruitfulness even when it may not seem 'seasonal'.</p>
+
+      <h3>Context: Joshua & the Ingredients of Success</h3>
+      <p>When God spoke to Joshua after Moses died, Joshua was afraid — he faced much land to conquer. God gave him a mandate and then revealed the secret in verse 8. We see the ingredients that construct success:</p>
+
+      <ol>
+        <li><strong>The Book</strong> — the Word of God</li>
+        <li><strong>Your Mouth</strong> — confession & declaration</li>
+        <li><strong>Your Mind</strong> — meditation (thought-life)</li>
+        <li><strong>Your Action</strong> — obedient works</li>
+      </ol>
+
+      <p>When the Word is in partnership with your mouth, mind, and action, His grace comes upon it and the Bible gives a guarantee. Success at any level is based on laws and principles. Sustainable success follows laws and principles.</p>
+
+      <h3>What Success Means</h3>
+      <p>Success means achieving goals as desired — making strategic, incremental progress. You can be moving without progressing. Progress must be step-by-step where each next step becomes greater than the last.</p>
+
+      <blockquote>Job 38:33 — "Do you know the ordinances of heaven? Can you set their dominion over the earth?"</blockquote>
+
+      <p>When you find dominion on earth — when you tame life — it is because you have mastered the same laws that govern the heavens.</p>
+
+      <p>There are laws that produce:</p>
+      <ul class="principles">
+        <li>Financial excellence</li>
+        <li>Excellence in leadership</li>
+        <li>The path into anointing</li>
+        <li>Influence</li>
+        <li>Systems & structures that work</li>
+        <li>Academic excellence for students</li>
+      </ul>
+
+      <p>Most believers know God wants them to succeed, but they don't realize success is not luck — it is programmable (the same way failure is). Failures often refuse to admit their participation in that programming.</p>
+
+      <h3>Common Ingredients of Failure</h3>
+      <ul>
+        <li>Ignorance</li>
+        <li>Laziness</li>
+        <li>Dishonour</li>
+      </ul>
+
+      <p>I will share irrefutable principles — by God's Word, if you listen, understand, believe and engage these principles, it becomes impossible to fail. It is your destiny to rise.</p>
+
+      <blockquote>Deuteronomy 28:1-2 — "And it shall come to pass, if thou shalt hearken diligently unto the voice of the LORD thy God... and all these blessings shall come upon thee, and overtake thee..."</blockquote>
+
+      <p>There is a song: "God have something to say — listen, listen and pay attention." Whenever God's Word comes, Satan is there to steal it — after seasons of prayer and fasting, light comes and the enemy tries to rob. He does this through:</p>
+      <ol>
+        <li>Carelessness</li>
+        <li>Presumption</li>
+        <li>Being besieged by the mercies of God (misplaced presumption)</li>
+      </ol>
+
+      <h3>The Five Laws of Commanding Success</h3>
+      <p>May your heart be open to receive God's Word.</p>
+
+      <h4>Law 1 — The God-First Principle</h4>
+      <p><strong>Genesis 1:1</strong> — "In the beginning God..." This is a divine protocol. If you want to succeed, begin with God — in business, marriage, career. Sequence matters: God must be alpha if He is to be omega. Smuggling God into an equation later does not work.</p>
+
+      <p>2 Chronicles 26:3-5 (Uzziah): as long as he sought the Lord, the Lord made him prosper. Nobody prospers by self-effort alone. It is vain to toil without God. God gives His beloved sleep. The power that wakes you is the one truly powerful.</p>
+
+      <p>Do not over-magnify education, experience, or connections. God designed a space only His size can fill. Show God nothing is above Him in your life.</p>
+
+      <h4>Law 2 — The Law of Mental Transformation</h4>
+      <blockquote>Proverbs 4:23 — "Keep thy heart with all diligence; for out of it are the issues of life."</blockquote>
+
+      <p>Your life is a reflection of your mindset and belief systems. You never become a failure until you think like one. Mindset is like software — upgrade it. Mindsets form from culture, background, past experience and associations.</p>
+
+      <p>If you walk with five wise people, you automatically increase your account of wisdom. What you believe or do not believe determines whether you succeed or fail.</p>
+
+      <h4>Belief Systems to Embrace</h4>
+      <ol>
+        <li>I have dominion in Christ.</li>
+        <li>I am chosen and ordained to bear fruit.</li>
+        <li>I have advantage of God’s wisdom, favour and power — Christ is become our wisdom and power.</li>
+        <li>The works of my hands are blessed — capacity for increase; I shall not borrow.</li>
+        <li>I cannot be disadvantaged — all things work together for my good (Romans 8:28).</li>
+      </ol>
+
+      <p>When things come — attacks, disappointments — God can turn them to your advantage. If a physical failure doesn’t enter your mindset as failure, you did not truly fail. Losses can be errands that return fruit when handled rightly.</p>
+
+      <h4>Law 3 — The Power of Value & Productivity</h4>
+      <p>The one who has answers is the one who will be needed. Provide solutions and you will be sought. The more valuable you are, the more people will go out of their way to find you.</p>
+
+      <p>Don't just desire a seat at the table — become so valuable you cannot be ignored. Even if people hate you, your usefulness keeps you important.</p>
+
+      <p><strong>Study to show thyself approved.</strong> Diligence is not a gift; it is a reward. Expand your knowledge bank and never stop learning until you stand before kings. Only kings have the power to reward you in the measure you deserve.</p>
+    </article>
+
+    <!-- Prayer / Closing -->
+    <aside class="message" aria-labelledby="prayer">
+      <h2 id="prayer" class="message-title"><span class="pill">Prayers</span> Short Prayer Points</h2>
+
+      <div class="prayers">
+        <div class="prayer-item">Father, renew my passion for You and for spiritual things.</div>
+        <div class="prayer-item">Lord, grant me discipline and hunger to pursue strategic knowledge — I obtain grace to go for knowledge.</div>
+        <div class="prayer-item">Father, bring people with the capacity to hold my hand into my next season; give me grace to maintain those You have already brought.</div>
+      </div>
+    </aside>
+
+  </div>
+</body>
+</html>

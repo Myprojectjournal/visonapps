@@ -1,0 +1,62 @@
+🎹 Piano App Roadmap (Human + AI-ready)
+Phase 1: Core Piano Learning App (Human-focused)
+
+Interactive Lessons: Child-friendly, step-by-step guidance for piano learning.
+
+Visual Keys: Show which keys are being played in real-time.
+
+Song Playback: Play worship songs, pre-selected tracks for practice.
+
+Basic MIDI/Bluetooth Control: Connect to digital/physical piano.
+
+Simple Choir Simulation: Pre-recorded group voices for basic practice.
+
+Phase 2: Choir & Karaoke Mode
+
+Vocal Extraction: Remove instrumental beats, leaving choir/singer voices.
+
+Multi-voice Simulation: Soprano, tenor, bass—adjustable number of voices.
+
+Section Practice: Users select their part and practice independently.
+
+Looped Learning: Repeat difficult sections for mastery.
+
+Church Use Ready: Pianist can play for choir groups or solo practice.
+
+Phase 3: Real-time Listening & Adaptive Keys
+
+Live Singer Tracking: App listens to singers and adjusts piano notes automatically.
+
+Automatic Key/Tempo Changes: Matches pitch and tune dynamically.
+
+Autonomous Song Recognition: Optionally play pre-selected songs or detect new songs live.
+
+Advanced AI Audio Analysis: Pitch detection, melody recognition, real-time feedback.
+
+Phase 4: Bot Playground Integration
+
+Modular Connection: Piano app acts as a module/plugin for Bot Playground.
+
+Bot Learning: Bots learn piano notes, sequences, and lessons.
+
+Practice Mode for Bots: Bots can practice autonomously or follow human lessons.
+
+Data Sharing: Progress of bots stored in playground for further AI development.
+
+Phase 5: Instrument Expansion
+
+Other Instruments: Guitar, drums, trumpet, etc.
+
+Multi-instrument AI Lessons: Each instrument has structured lessons and visual feedback.
+
+Interactive Practice: Users or bots can play multiple instruments, creating ensemble music.
+
+Key Principles
+
+Human-first approach: The main app focuses on humans initially.
+
+Bots learn in playground: Keeps system modular and scalable.
+
+Phased AI integration: Start simple, then advance to real-time listening and bot-teaching modules.
+
+Faith & creativity twist: Choir simulation, worship music focus, multi-voice lessons.

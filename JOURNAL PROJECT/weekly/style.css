@@ -1,0 +1,55 @@
+/* Weekly container */
+.weekly-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Page title */
+.weekly-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+}
+
+/* Weekly cards grid */
+.weekly-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual weekly card */
+.weekly-card {
+  background: #eef6fc;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-decoration: none; /* removes underline if card is a link */
+  transition: transform 0.2s, background 0.3s;
+  display: block; /* makes entire card clickable */
+}
+
+/* Hover effect */
+.weekly-card:hover {
+  transform: translateY(-5px);
+  background: #d9ebfa;
+}
+
+/* Weekly card heading */
+.weekly-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1a237e;
+}
+
+/* Weekly card content */
+.weekly-card p {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.5;
+}
